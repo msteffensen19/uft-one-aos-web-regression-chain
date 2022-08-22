@@ -1,0 +1,50 @@
+---
+version: 4
+id: "2110537"
+title: "uft-one-aos-web-regression"
+schedule:
+  type: "Manual"
+fetchStream: true
+runNoChangesets: false
+mandatoryGate: "IGNORE"
+cleanBeforeCheckout: false
+haltOnFailure: false
+executionTimeout: 0
+runQueued: "LIMIT_QUEUED_RUNS"
+scanPaths: ""
+matchingPaths: ""
+capabilities: "uft-one"
+experts:
+- expert:
+    title: "Micro Focus UFT One"
+    name: "Micro Focus UFT One"
+    key: "2110622"
+    id: "com.microfocus.adm.pulse:uftone"
+    chainOrder: "1"
+    properties:
+      pulseOutputVariableList: ""
+      pulseFindingsUnstableSeverityCount: "1"
+      tcAttachReportOnErrors: "true"
+      pulseFindingsFailSeverityCount: "1"
+      tcAttachReportOnPass: "true"
+      advanced: "false"
+      pulseConsoleUnstableRegex: ""
+      tests: "C:\\Users\\demo\\uft-one-aos-web-regression\\AOS_UFT_WEB_Regression"
+      pulseFindingsUnstableOn: "false"
+      tcAttachReportOnFail: "true"
+      pulseConsoleFailRegex: ""
+      timeout: "600"
+      pulseUnitTestFailuresFailOn: "false"
+      pulseDisplayFailedUnitTests: "DISPLAY_ALWAYS"
+      pulseFindingsUnstableSeverity: "ERROR"
+      pulseStepEnabled: "true"
+      tcAttachReportOnSkip: "true"
+      pulseFindingsFailSeverity: "ERROR"
+      pulseFindingsFailOn: "false"
+      pulseConsoleUnstableOn: "false"
+      pulseUnitTestFailuresUnstableOn: "false"
+      pulseConsoleFailOn: "false"
+variables: {}
+readOnlyVariables: []
+privateVariables: []
+detectOnGoingVulnerabilities: false
